@@ -36,7 +36,7 @@ Zoiper (SIP) → Asterisk (port 5060) → FastAGI (port 4573) → Python app
 
 ```bash
 git clone https://github.com/Tricksteridze/asterisk-gemini-voice
-cd voice-ai-asterisk
+cd asterisk-gemini-voice
 ```
 
 ### 2. Set your API key
