@@ -1,0 +1,20 @@
+services:
+  asterisk:
+    image: andrius/asterisk
+    container_name: voice_pbx
+    network_mode: "host"
+    volumes:
+      - ./config:/etc/asterisk
+      - ./records:/tmp
+    restart: always
+
+  voice_app:
+    build: ./app
+    container_name: voice_ai_logic
+    network_mode: "host"
+    env_file:
+      - .env
+    volumes:
+      - ./app:/app
+      - ./records:/tmp
+    restart: always
