@@ -35,7 +35,7 @@ Zoiper (SIP) → Asterisk (port 5060) → FastAGI (port 4573) → Python app
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/voice-ai-asterisk.git
+git clone https://github.com/Tricksteridze/voice-ai-asterisk.git
 cd voice-ai-asterisk
 ```
 
